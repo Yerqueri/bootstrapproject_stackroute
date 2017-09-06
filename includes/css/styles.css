@@ -1,0 +1,169 @@
+/*
+
+My Custom CSS*/
+=============
+warriorleft {
+	text-align: justify;
+}
+
+warriorright {
+	padding-left: 0;
+	padding-top: 50px;
+	margin-left: 0;
+}
+
+.foot a {
+	text-decoration: none;
+	color: #530909;
+	font-weight: bold;
+	
+}
+ /* --------------------------------------
+   Layout
+   -------------------------------------- */
+	/* --------------------------------------
+   Typography
+   -------------------------------------- */    
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+@font-face {
+	font-family: font1;
+	src: url(../fonts/Lightmorning.TTF)
+}
+
+.well .page-header {
+	margin-top: 0;
+	text-transform: uppercase;
+}
+
+.well .page-header h1 {
+	margin-top: 0;
+}
+
+.well .page-header p {font size 10px;
+	text-transform: uppercase;
+}
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+.navstyle {
+	background-image: url(../../images/navback3.png);
+	/* background: #555555; */
+}
+
+#searchpage {
+	width: 200px;
+}
+
+.btn {
+	color: #fff;
+	background: #530909;
+	/* padding: 10px 20px; */
+	font-size: 10px;
+	letter-spacing: 1px;
+	text-transform: uppercase
+}
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+.parallax {
+	background-image: url("../../images/parback2.jpeg");
+	width: 100%;
+	min-height: 400px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax2 {
+	background-image: url("../../images/art_large.jpg");
+	width: 100%;
+	min-height: 400px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#myCarousel {
+	margin-top: 60px;
+}
+
+.carousel-caption {
+	font-size: 24px;
+}
+
+.carousel-caption h4 {
+	font-size: 32px;
+}
+
+#myCarousel .item {
+	height: 520px;
+}
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media ( max-width : 480px) {
+	#slide1 {
+		background: url('../../images/carousel_small_01.jpg') top center
+			no-repeat;
+	}
+	#slide2 {
+		background: url('../../images/carousel_small_02.jpg') top center
+			no-repeat;
+	}
+	#slide3 {
+		background: url('../../images/carousel_small_03.jpg') top center
+			no-repeat;
+	}
+	#myCarousel .item {
+		height: 310px;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media ( max-width : 768px) {
+	#slide1 {
+		background: url('../../images/carousel_medium_01.jpg') top center
+			no-repeat;
+	}
+	#slide2 {
+		background: url('../../images/carousel_medium_02.jpg') top center
+			no-repeat;
+	}
+	#slide3 {
+		background: url('../../images/carousel_medium_03.jpg') top center
+			no-repeat;
+	}
+	#myCarousel .item {
+		height: 400px;
+	}
+}
+
+/* Large desktop */
+@media ( min-width : 1200px) {
+	#slide1 {
+		background: url('../../images/carousel_large_01.jpg') top center
+			no-repeat;
+	}
+	#slide2 {
+		background: url('../../images/carousel_large_02.jpg') top center
+			no-repeat;
+	}
+	#slide3 {
+		background: url('../../images/carousel_large_03.jpg') top center
+			no-repeat;
+	}
+	#myCarousel .item {
+		height: 520px;
+	}
+}

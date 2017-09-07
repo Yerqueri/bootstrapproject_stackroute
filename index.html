@@ -4,7 +4,7 @@
 <head>
 
 <!-- Website Title & Description for Search Engine purposes -->
-<title> Mysterious Japan</title>
+<title>Mysterious Japan</title>
 <meta name="description" content="">
 
 <!-- Mobile viewport optimized -->
@@ -140,7 +140,7 @@
 		<!-- end myCarousel -->
 
 		<div>
-			<div class="row" >
+			<div class="row">
 				<div class="col-12">
 					<br />
 					<div class="well well-small visible-sm">
@@ -309,26 +309,87 @@
 	<!-- map -->
 	<div id="map"
 		style="-webkit-filter: grayscale(100%); filter: grayscale(100%);">
-		<iframe  height="300" style="border: 0;width:100%;"
+		<iframe height="300" style="border: 0; width: 100%;"
 			src="https://www.google.com/maps/embed/v1/place?q=kyoto&key=AIzaSyAIl8GPQVzK5chWr3xE0YY6zo084civI_Q">
 		</iframe>
 	</div>
 	<!-- map ends -->
 	
+	
+	<!-- modal begins -->
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal">&times;</button>
+
+					<h4 class="modal-title">Feedback Window</h4>
+				</div>
+				<!-- end modal-header -->
+				<div class="modal-body">
+
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label class="col-lg-2 control-label" for="inputName">Name</label>
+							<div class="col-lg-10">
+								<input class="form-control" id="inputName" placeholder="Name"
+									type="text">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+							<div class="col-lg-10">
+								<input class="form-control" id="inputEmail" placeholder="Email"
+									type="email">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-lg-2 control-label" for="inputMessage">Message</label>
+							<div class="col-lg-10">
+								<textarea class="form-control" id="inputMessage"
+									placeholder="Message" rows="3"></textarea>
+								<button class="btn btn-success pull-right" type="submit">Send</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- end modal-body -->
+
+				<div class="modal-footer">
+					<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+					<button class="btn btn-primary" type="button">Save changes</button>
+				</div>
+				<!-- end modal-footer -->
+			</div>
+			<!-- end modal-content -->
+		</div>
+		<!-- end modal-dialog -->
+	</div>
+	<!-- end myModal -->
+
 	<!-- footer begins -->
-	<footer class="navstyle">
+	<footer style="background:#676767">
 		<div
 			style="text-align: center; text-transform: uppercase; color: #530909"
 			class="foot">
-			<a href="https://github.com/"><i class="fa fa-github fa-2x"
-				aria-hidden="true"></i>&#160; github</a> <a
-				href="https://www.facebook.com/"><i
-				class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>&#160;
-				facebook</a> <a href="https://twitter.com/login?lang=en"><i
-				class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>&#160;
-				twitter</a> <a href="https://plus.google.com/discover"><i
-				class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i>&#160;
-				google+</a>
+			<a href="https://github.com/">
+				<i class="fa fa-github fa-2x"aria-hidden="true"></i>&#160;github
+			</a> 
+			<a href="https://www.facebook.com/">
+				<i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>&#160;facebook
+			</a> 
+			<a href="https://twitter.com/login?lang=en">
+				<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>&#160;twitter
+			</a> 
+			<a href="https://plus.google.com/discover">
+				<i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i>&#160;google+
+			</a>
+			
+			<a href="#myModal" data-toggle=modal>
+				<i class="fa fa-comments fa-2x" aria-hidden="true"></i>&#160;contact us
+			</a>
 		</div>
 	</footer>
 	<!-- fooetr ends -->

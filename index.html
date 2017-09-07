@@ -328,11 +328,11 @@
 				<!-- end modal-header -->
 				<div class="modal-body">
 
-					<form class="form-horizontal">
+					<form class="form-horizontal" name="ContactForm" onsubmit="return ValidateContactForm();">
 						<div class="form-group">
 							<label class="col-lg-2 control-label" for="inputName">Name</label>
 							<div class="col-lg-10">
-								<input class="form-control" id="inputName" placeholder="Name"
+								<input class="form-control" id="inputName" placeholder="Name" name="Name"
 									type="text">
 							</div>
 						</div>
@@ -340,7 +340,7 @@
 						<div class="form-group">
 							<label class="col-lg-2 control-label" for="inputEmail">Email</label>
 							<div class="col-lg-10">
-								<input class="form-control" id="inputEmail" placeholder="Email"
+								<input class="form-control" id="inputEmail" placeholder="Email" name="Email"
 									type="email">
 							</div>
 						</div>
@@ -348,9 +348,9 @@
 						<div class="form-group">
 							<label class="col-lg-2 control-label" for="inputMessage">Message</label>
 							<div class="col-lg-10">
-								<textarea class="form-control" id="inputMessage"
-									placeholder="Message" rows="3"></textarea>
-								<button class="btn btn-success pull-right" type="submit">Send</button>
+								<textarea class="form-control" id="inputMessage" 
+									placeholder="Message" name="Msg" rows="3"></textarea>
+								<button class="btn btn-success pull-right" type="submit">Submit feedback</button>
 							</div>
 						</div>
 					</form>
@@ -374,6 +374,7 @@
 		<div
 			style="text-align: center; text-transform: uppercase; color: #530909"
 			class="foot">
+			<br />
 			<a href="https://github.com/">
 				<i class="fa fa-github fa-2x"aria-hidden="true"></i>&#160;github
 			</a> 
@@ -390,6 +391,8 @@
 			<a href="#myModal" data-toggle=modal>
 				<i class="fa fa-comments fa-2x" aria-hidden="true"></i>&#160;contact us
 			</a>
+			<br />
+			<br />
 		</div>
 	</footer>
 	<!-- fooetr ends -->
@@ -405,13 +408,13 @@
 				|| document
 						.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')
 	</script>
+	
 
 	<!-- Bootstrap JS -->
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 
 	<!-- Custom JS -->
 	<script src="includes/js/script.js"></script>
-
 
 </body>
 </html>

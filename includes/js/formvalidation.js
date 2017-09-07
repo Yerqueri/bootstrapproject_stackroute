@@ -1,13 +1,19 @@
-function ValidateContactForm()
+function ValidateFeedbackForm()
 {
-    var name = document.ContactForm.Name;
-    var email = document.ContactForm.Email;
-    var comment = document.ContactForm.Msg;
-    
-    
+    var name = document.FeedbackForm.Name;
+    var email = document.FeedbackForm.Email;
+    var comment = document.feedbackForm.Comment;
+
     if (name.value == "")
     {
-        window.alert("Please enter your name.");
+        window.alert("Name can not be empty");
+        name.focus();
+        return false;
+    }
+    
+    if (name.search(/[0-9]/i)!=0)
+    {
+        window.alert("Name can not contain number");
         name.focus();
         return false;
     }
@@ -31,7 +37,7 @@ function ValidateContactForm()
         return false;
     }
 
-    
+
     if (comment.value == "")
     {
         window.alert("Please provide a detailed description or comment.");

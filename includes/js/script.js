@@ -30,8 +30,6 @@ function ValidateContactForm()
         email.focus();
         return false;
     }
-
-    
     if (comment.value == "")
     {
         window.alert("Please provide a detailed description or comment.");

@@ -6,11 +6,11 @@ warriorleft {
 	text-align: justify;
 }
 
-warriorright {
+/* warriorright {
 	padding-left: 0;
 	padding-top: 50px;
 	margin-left: 0;
-}
+} */
 
 .foot a {
 	text-decoration: none;
@@ -27,6 +27,7 @@ warriorright {
 body {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegibility;
+	color:#fff;
 }
 
 @font-face {
@@ -51,8 +52,8 @@ body {
    Navbar
    -------------------------------------- */
 .navstyle {
-	background-image: url(../../images/navback3.png);
-	/* background: #555555; */
+	/* background-image: url(../../images/navback3.png); */
+	background: #555555;
 }
 
 #searchpage {
@@ -128,6 +129,13 @@ body {
 	#myCarousel .item {
 		height: 310px;
 	}
+	
+	warriorright {
+	padding-left: 0;
+	padding-top: 50px;
+	margin-left: 0;
+	
+	}
 }
 
 /* Landscape phone to portrait tablet */
@@ -147,6 +155,13 @@ body {
 	#myCarousel .item {
 		height: 400px;
 	}
+	
+	warriorright {
+	padding-left: 0;
+	padding-top: 50px;
+	margin-left: 0;
+	width:100%;
+	}
 }
 
 /* Large desktop */
@@ -165,5 +180,12 @@ body {
 	}
 	#myCarousel .item {
 		height: 520px;
+	}
+	
+	warriorright {
+	padding-left: 0;
+	padding-top: 50px;
+	margin-left: 0;
+	/* width:100%; */
 	}
 }
